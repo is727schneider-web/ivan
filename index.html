@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Ariana 💖</title>
+    <title>Para Ariana</title>
     <style>
         * {
             margin: 0;
@@ -12,8 +12,8 @@
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: #fff;
+            background: linear-gradient(135deg, #0b0f19, #1a1c29, #0f1016);
+            color: #e2e8f0;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -22,53 +22,61 @@
             padding: 20px;
         }
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 650px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            max-width: 750px;
             width: 100%;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            text-align: center;
+            padding: 45px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
         }
         h1 {
             font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: #ffb6c1;
+            margin-bottom: 25px;
+            color: #f8fafc;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 15px;
         }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+        .content-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
             margin-bottom: 20px;
-            color: #e0e0e0;
+            color: #cbd5e1;
+            text-align: justify;
+        }
+        .interactive-section {
+            text-align: center;
+            margin-top: 30px;
         }
         .interactive-btn {
-            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
             color: white;
             border: none;
-            padding: 12px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 600;
             border-radius: 30px;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-top: 15px;
-            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
         }
         .interactive-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(255, 65, 108, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6);
+            background: linear-gradient(135deg, #2563eb, #1e40af);
         }
         #hidden-message {
             display: none;
             margin-top: 25px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            border-left: 4px solid #ff416c;
-            animation: fadeIn 0.8s ease-in-out;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border-left: 4px solid #3b82f6;
+            animation: fadeIn 0.6s ease-in-out;
+            text-align: left;
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -79,16 +87,27 @@
 <body>
 
     <div class="card">
-        <h1>Para Ariana 💖</h1>
-        <p>Me tomó mucho valor armar las palabras para hablarte por primera vez. Cada vez que te miro, la verdad es que me quedo sin palabras... pero mi promesa es enamorarte todos los días hasta obtener ese "sí".</p>
+        <h1>Para Ariana</h1>
         
-        <!-- Botón interactivo -->
-        <button class="interactive-btn" onclick="revealMessage()">Haz clic aquí ✨</button>
+        <p class="content-text">
+            Hay conversaciones que empiezan de la nada y terminan volviéndose indispensables en la rutina. Vivimos en un ritmo donde la mayoría de las interacciones son pasajeras y superficiales, por eso mismo quería hacer algo diferente, algo que destaque del ruido habitual.
+        </p>
+        
+        <p class="content-text">
+            No se trata de forzar las cosas ni de cumplir con guiones preestablecidos, sino de reconocer cuando alguien realmente vale la pena. Tienes una presencia y una forma de ser que llaman la atención de inmediato, y ser sincero con lo que uno busca es el primer paso para construir algo genuino.
+        </p>
 
-        <!-- Mensaje oculto que aparece al hacer clic -->
-        <div id="hidden-message">
-            <p style="color: #ffb6c1; font-weight: bold; margin-bottom: 10px;">Lo que mi voz a veces calla:</p>
-            <p>Gracias por iluminar mis días con tu sonrisa. No importa cuánto tiempo tome, estoy aquí para ti.</p>
+        <div class="interactive-section">
+            <button class="interactive-btn" onclick="revealMessage()">Ver perspectiva completa</button>
+
+            <div id="hidden-message">
+                <p class="content-text" style="margin-bottom: 15px; color: #f1f5f9;">
+                    <b>Lo que hay detrás de todo esto:</b>
+                </p>
+                <p class="content-text">
+                    La intención de esto no es aburrirte con discursos, sino demostrarte con hechos que cuando alguien me interesa, sé jugármela de verdad y hacer las cosas bien. Me parece sumamente interesante lo que proyectas, y mi objetivo es simple: seguir conociéndote en otro nivel y ver qué tal fluyen las cosas entre los dos, sin prisa pero sin pausa.
+                </p>
+            </div>
         </div>
     </div>
 
