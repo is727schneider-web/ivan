@@ -11,8 +11,8 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #0b0f19, #1a1c29, #0f1016);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #090a0f, #121624, #1a1d2e);
             color: #e2e8f0;
             min-height: 100vh;
             display: flex;
@@ -26,16 +26,16 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            max-width: 750px;
+            max-width: 680px;
             width: 100%;
-            padding: 45px;
-            border-radius: 24px;
+            padding: 40px;
+            border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
         }
         h1 {
             font-size: 2.2rem;
             margin-bottom: 25px;
-            color: #f8fafc;
+            color: #ffffff;
             letter-spacing: 0.5px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 15px;
@@ -43,7 +43,7 @@
         .content-text {
             font-size: 1.05rem;
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             color: #cbd5e1;
             text-align: justify;
         }
@@ -52,7 +52,7 @@
             margin-top: 30px;
         }
         .interactive-btn {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: white;
             border: none;
             padding: 14px 32px;
@@ -61,19 +61,19 @@
             border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
         }
         .interactive-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6);
-            background: linear-gradient(135deg, #2563eb, #1e40af);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.6);
+            background: linear-gradient(135deg, #3b82f6, #1e40af);
         }
         #hidden-message {
             display: none;
             margin-top: 25px;
             padding: 25px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 14px;
             border-left: 4px solid #3b82f6;
             animation: fadeIn 0.6s ease-in-out;
             text-align: left;
@@ -90,22 +90,22 @@
         <h1>Para Ariana</h1>
         
         <p class="content-text">
-            Hay conversaciones que empiezan de la nada y terminan volviéndose indispensables en la rutina. Vivimos en un ritmo donde la mayoría de las interacciones son pasajeras y superficiales, por eso mismo quería hacer algo diferente, algo que destaque del ruido habitual.
+            En un mundo donde la mayoría se conforma con interacciones rápidas y conversaciones vacías, encontrar a alguien que transmita madurez, criterio y una vibra diferente no es algo común. Tienes una personalidad que no necesita llamar la atención para hacerse notar, y eso se valora de inmediato.
         </p>
         
         <p class="content-text">
-            No se trata de forzar las cosas ni de cumplir con guiones preestablecidos, sino de reconocer cuando alguien realmente vale la pena. Tienes una presencia y una forma de ser que llaman la atención de inmediato, y ser sincero con lo que uno busca es el primer paso para construir algo genuino.
+            No soy de rodeos ni de discursos exagerados. Cuando alguien me resulta verdaderamente interesante, prefiero demostrarlo con iniciativa real y detalles hechos a medida en lugar de simples palabras casuales.
         </p>
 
         <div class="interactive-section">
-            <button class="interactive-btn" onclick="revealMessage()">Ver perspectiva completa</button>
+            <button class="interactive-btn" onclick="revealMessage()">Descubrir perspectiva ✨</button>
 
             <div id="hidden-message">
-                <p class="content-text" style="margin-bottom: 15px; color: #f1f5f9;">
-                    <b>Lo que hay detrás de todo esto:</b>
+                <p class="content-text" style="margin-bottom: 12px; color: #f8fafc; font-weight: 600;">
+                    La razón de este detalle:
                 </p>
                 <p class="content-text">
-                    La intención de esto no es aburrirte con discursos, sino demostrarte con hechos que cuando alguien me interesa, sé jugármela de verdad y hacer las cosas bien. Me parece sumamente interesante lo que proyectas, y mi objetivo es simple: seguir conociéndote en otro nivel y ver qué tal fluyen las cosas entre los dos, sin prisa pero sin pausa.
+                    Esto no busca ser una declaración dramática, sino una invitación clara a salir de la rutina. Me interesa conocerte a fondo, ver cómo coinciden nuestras ideas y comprobar si la química en persona supera lo genial que ya fluye al hablar. Sin presiones, pero con la intención firme de hacer que cada momento valga la pena.
                 </p>
             </div>
         </div>
@@ -124,3 +124,4 @@
 
 </body>
 </html>
+
